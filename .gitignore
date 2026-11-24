@@ -1,0 +1,29 @@
+# --- Your private data: NEVER commit these ---
+# Real credit card statements and the local database stay on your machine only.
+data/
+*.db
+*.sqlite
+*.csv
+!**/sample-data/*.csv
+
+# Secrets (API keys for Claude/GPT/Gemini go here)
+.env
+.env.*
+!.env.example
+
+# --- Generated files (rebuilt automatically, no need to save) ---
+node_modules/
+dist/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+target/
+
+# --- OS / editor clutter ---
+.DS_Store
+.vscode/
+.idea/
+
+# Personal notes (kept local, never on GitHub)
+DECISIONS.md
